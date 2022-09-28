@@ -29,7 +29,7 @@
 						<div class="logo" aria-hidden="true">
 							<span class="red">P</span>
 							<span class="yellow">e</span>
-							<span class="blue">t</span>
+							<span class="blue space">t</span>
 							<span class="green">S</span>
 							<span class="red">e</span>
 							<span class="yellow">a</span>
@@ -40,34 +40,24 @@
 						</div>
 					</a>
 					<form id="searchBar" class="searchBar" role="search">
-						<label class="offscreen" for="search"
-							>Enter a search term or phrase</label
-						>
 						<input
 							id="search"
 							type="text"
 							autocomplete="off"
 							role="searchbox"
 						/>
-						<div
-							id="clear"
-							class="none button clear"
-							role="button"
-							tabindex="0"
-							aria-label="Clear search terms"
-						>
-							<i class="fas fa-times"></i>
+						<div class="buttonContainer">
+							<button
+								id="searchButton"
+								class="button searchButton"
+								aria-label="Submit button"
+							>
+								<i class="fa-brands fa-searchengin"></i>
+							</button>
+							<button id="randomButton">
+								<i class="fa-solid fa-shuffle"></i>
+							</button>
 						</div>
-						<button
-							id="searchButton"
-							class="button searchButton"
-							aria-label="Submit button"
-						>
-							<i class="fa-brands fa-searchengin"></i>
-						</button>
-						<button id="randomButton">
-							<i class="fa-solid fa-shuffle"></i>
-						</button>
 					</form>
 				</div>
 			</section>

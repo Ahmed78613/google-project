@@ -4,6 +4,7 @@ const randomBtn = document.querySelector("#randomButton");
 const form = document.querySelector("#searchBar");
 const searchResultsSection = document.querySelector("#searchResultsSection");
 const topSection = document.querySelector(".search-wrapper");
+const div = document.querySelector(".searchEntry");
 const logo = document.querySelector(".logo");
 
 // Event Listeners
@@ -45,8 +46,9 @@ async function search(e) {
 		});
 		searchResultsSection.appendChild(parentDiv);
 		// Styling
-		topSection.style.flexDirection = "row";
-		logo.style.marginRight = "30px";
+		div.style.height = "300px";
+		logo.style.fontSize = "44px";
+		logo.style.marginRight = "20px";
 	} catch (error) {
 		window.alert("No results for query, please try again.");
 	}

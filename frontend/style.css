@@ -1,4 +1,4 @@
-%flex {
+/* %flex {
 	display: flex;
 	align-items: center;
 }
@@ -239,4 +239,150 @@ a {
 	height: 100%;
 	justify-content: center;
 	align-items: center;
+} */
+
+/* top */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.searchEntry {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 95vh;
+}
+
+.search-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form input[type="text"] {
+	border-radius: 20px;
+	border: 1px solid rgb(218, 215, 215);
+	padding: 0.75rem;
+	width: 70vw;
+	max-width: 600px;
+	font-size: 20px;
+}
+
+.logo {
+	font-size: 70px;
+	margin-bottom: 0.5rem;
+}
+
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}
+
+.yellow {
+	color: #ffc107;
+}
+
+.green {
+	color: green;
+}
+
+.exclaim {
+	display: inline-block;
+	font-size: 70px;
+	transform: rotate(12deg);
+}
+
+.buttonContainer {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 10px;
+
+	margin: 1rem 0;
+}
+
+.buttonContainer button {
+	background-color: rgb(240, 238, 238);
+	border: none;
+	border-radius: 4px;
+	padding: 0.25rem 0;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	padding: 0.4rem 4rem;
+}
+
+.buttonContainer button:hover {
+	background-color: rgb(190, 190, 190);
+}
+
+#searchResultsSection {
+	width: 90%;
+	margin: 2rem auto;
+	max-width: 1400px;
+}
+
+#searchResultsSection div {
+	margin: 1.5rem 0;
+}
+
+#searchResultsSection a {
+	color: #2a63d4;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+#searchResultsSection a:hover {
+	text-decoration: underline;
+}
+
+#searchResultsSection p {
+	font-size: 14px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+	.logo,
+	.exclaim {
+		font-size: 30px;
+	}
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 10px;
+}
+.space {
+	margin-right: 20px;
+}
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
