@@ -26,7 +26,12 @@ Search for the different types of pets and get back results which match your sea
 
 ## Screenshots/Images
 
+### Homepage
+
 ![homepage](./frontend/images/main.png)
+
+### Search Results
+
 ![search results](./frontend/images/searchresults.png)
 
 ## Bugs
