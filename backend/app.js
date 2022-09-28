@@ -19,11 +19,11 @@ app.get("/", (req, res) => {
 		{ message: "Welcome to our Pet Search Search!" },
 		{ endpoints: ["/pets", "/cats", "/dogs", "/fish", "/birds", "/hamsters"] },
 		{
-			filteredEndpoint: "/<endpoint>/filter/<number of results>",
+			filteredEndpoint: "/<endpoint>/filter/<number of results (1 to 10)>",
 			example: "/dogs/filter/5",
 		},
 		{
-			randomEndpoint: "/<endpoint>/random/",
+			randomEndpoint: "/<endpoint>/random",
 			example: "/dogs/random",
 		},
 	]);
