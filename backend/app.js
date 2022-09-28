@@ -15,7 +15,18 @@ app.use(bodyParser.json());
 
 // Default
 app.get("/", (req, res) => {
-	res.send("Welcome to our Pet Search Engine API!");
+	res.send([
+		{ message: "Welcome to our Pet Search Search!" },
+		{ endpoints: ["/pets", "/cats", "/dogs", "/fish", "/birds", "/hamsters"] },
+		{
+			filteredEndpoint: "/<endpoint>/filter/<number of results>",
+			example: "/dogs/filter/5",
+		},
+		{
+			randomEndpoint: "/<endpoint>/random/",
+			example: "/dogs/random",
+		},
+	]);
 });
 
 // Calling Routes
