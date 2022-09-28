@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 // Default
 app.get("/", (req, res) => {
-	res.send("Welcome to our Google API!");
+	res.send("Welcome to our Pet Search Engine API!");
 });
 
 // Calling Routes
