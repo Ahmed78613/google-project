@@ -174,7 +174,7 @@ const fishData = [
 			"Many species of fish are caught by humans and consumed as food in virtually all regions around the world. Fish has been an important dietary source of protein and other nutrients throughout human history.",
 		link: "https://en.wikipedia.org/wiki/Fish_as_food",
 	},
-	,
+
 	{
 		title: "Fish recipes | BBC Good Food",
 		description: "https://www.bbcgoodfood.com/recipes/collection/fish-recipes",
