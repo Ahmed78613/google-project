@@ -6,62 +6,75 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="./style.css" />
 		<script defer src="./index.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
 		<title>PetSearch</title>
 	</head>
 	<body>
 		<main>
-		<section class="searchEntry">
-		<div class ="search-wrapper">
-			<div class="logo" aria-hidden ="true">
-				<span class="red">P</span>
-				<span class="yellow">e</span>
-				<span class="blue">t</span>
-				<span class="green">S</span>
-				<span class="red">e</span>
-				<span class="yellow">a</span>
-				<span class="blue">r</span>
-				<span class="green">c</span>
-				<span class="red">h</span>
-				<span class="yellow exclaim">!</span>
-			</div>
-			<form id="searchBar" class="searchBar" role="search">
-				<label class="offscreen" for="search">Enter a search term or phrase</label>
-				<input id="search" type="text" autocomplete="off" role="searchbox" />
-				<div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms">
-					<i class="fas fa-times"></i>
-				</div>
-				<button id ="searchButton" class="button searchButton" type = "submit" aria-label ="Submit button">
-					<i class="fa-brands fa-searchengin"></i>
-				</button>
-			</form>
-		</div>
-		</section>
-		<section class="results">
-			<h2 class ="offscreen">Search Results</h2>
-			
-			<div id = "searchResults" class="searchResults">
-
-				<div class = "resultItem">
-				
-					<div class ="resultContents">
-						<div class = "resultText">
-							<p class ="resultDescription"></p>
+			<section class="searchEntry">
+				<div class="search-wrapper">
+					<a href="./index.html">
+						<div class="logo" aria-hidden="true">
+							<span class="red">P</span>
+							<span class="yellow">e</span>
+							<span class="blue">t</span>
+							<span class="green">S</span>
+							<span class="red">e</span>
+							<span class="yellow">a</span>
+							<span class="blue">r</span>
+							<span class="green">c</span>
+							<span class="red">h</span>
+							<span class="yellow exclaim">!</span>
 						</div>
-					</div>
+					</a>
+					<form id="searchBar" class="searchBar" role="search">
+						<label class="offscreen" for="search"
+							>Enter a search term or phrase</label
+						>
+						<input
+							id="search"
+							type="text"
+							autocomplete="off"
+							role="searchbox"
+						/>
+						<div
+							id="clear"
+							class="none button clear"
+							role="button"
+							tabindex="0"
+							aria-label="Clear search terms"
+						>
+							<i class="fas fa-times"></i>
+						</div>
+						<button
+							id="searchButton"
+							class="button searchButton"
+							aria-label="Submit button"
+						>
+							<i class="fa-brands fa-searchengin"></i>
+						</button>
+						<button id="randomButton">
+							<i class="fa-solid fa-shuffle"></i>
+						</button>
+					</form>
 				</div>
-
-			</div>
-
-		</section>
+			</section>
+			<section id="searchResultsSection"></section>
 		</main>
 		<footer>
-			<p><span &lt;&lt; </span></span>Powered by love for pets</p>
+			<p>Powered by love for pets</p>
 		</footer>
-
-
 	</body>
 </html>
