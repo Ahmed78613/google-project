@@ -1,18 +1,4 @@
-const express = require("express");
-const cors = require("cors");
-const bodyParser = require("body-parser");
-const app = express();
-const googleData = require("./data");
-
-// middleware
-app.use(cors());
-app.use(bodyParser.json());
-
-//routes
-app.get("/", (req, res) => {
-	res.send("Welcome to our Google API!");
-});
-
+const app = require("./app");
 // Get the server running
 const port = 3000;
 
