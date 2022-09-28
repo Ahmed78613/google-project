@@ -334,6 +334,10 @@ form input[type="text"] {
 	background-color: rgb(190, 190, 190);
 }
 
+.buttonContainer button i {
+	font-size: 16px;
+}
+
 #searchResultsSection {
 	width: 90%;
 	margin: 2rem auto;

@@ -20,10 +20,11 @@ async function search(e) {
 	try {
 		// clear if any old results
 		const checkResults = document.querySelector(".myResults");
-		console.log(checkResults);
 		checkResults && checkResults.remove();
 		// get search query
 		const query = e.target.search.value;
+		if (query.length === 0)
+			return window.alert("Please enter into the searchbar.");
 		// Fetch
 		const res = await fetch(`http://localhost:3000/${query}`);
 		const data = await res.json();
@@ -56,6 +57,8 @@ async function search(e) {
 
 // I'm Feeling Lucky Button
 async function searchRandom(query) {
+	if (query.length === 0)
+		return window.alert("Please enter into the searchbar.");
 	try {
 		// Fetch
 		const res = await fetch(`http://localhost:3000/${query}/random`);
