@@ -67,7 +67,8 @@ async function search(e) {
 		searchResultsSection.appendChild(parentDiv);
 		// Styling
 		searchResultsSection.style.display = "block";
-		div.style.height = "300px";
+		div.style.height = "220px";
+		div.style.borderBottom = "1px solid lightgrey";
 		logo.style.fontSize = "44px";
 		logo.style.marginRight = "20px";
 	} catch (error) {
