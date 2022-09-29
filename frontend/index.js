@@ -6,6 +6,7 @@ const searchResultsSection = document.querySelector("#searchResultsSection");
 const topSection = document.querySelector(".search-wrapper");
 const div = document.querySelector(".searchEntry");
 const logo = document.querySelector(".logo");
+const closeBtn = document.querySelector(".closeBtn");
 
 // Event Listeners
 form.addEventListener("submit", (e) => {
@@ -13,6 +14,10 @@ form.addEventListener("submit", (e) => {
 });
 randomBtn.addEventListener("click", () => {
 	searchRandom(searchBar.value);
+});
+
+closeBtn.addEventListener("click", () => {
+	searchBar.value = "";
 });
 
 async function search(e) {
@@ -47,6 +52,7 @@ async function search(e) {
 		});
 		searchResultsSection.appendChild(parentDiv);
 		// Styling
+		searchResultsSection.style.display = "block";
 		div.style.height = "300px";
 		logo.style.fontSize = "44px";
 		logo.style.marginRight = "20px";
