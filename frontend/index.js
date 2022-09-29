@@ -1,15 +1,20 @@
+// searchbar
 const searchBar = document.querySelector("#search");
+const form = document.querySelector("#searchBar");
+const searchArea = document.querySelector(".searchArea");
+// buttons
 const searchBtn = document.querySelector("#searchButton");
 const randomBtn = document.querySelector("#randomButton");
-const form = document.querySelector("#searchBar");
+const closeBtn = document.querySelector(".closeBtn");
+const helpBtn = document.querySelector(".fa-circle-info");
+// results
 const searchResultsSection = document.querySelector("#searchResultsSection");
+// top section
 const topSection = document.querySelector(".search-wrapper");
 const div = document.querySelector(".searchEntry");
 const logo = document.querySelector(".logo");
-const closeBtn = document.querySelector(".closeBtn");
+// other
 const darkMode = document.querySelector("#darkMode");
-const searchArea = document.querySelector(".searchArea");
-const helpBtn = document.querySelector(".fa-circle-info");
 const popup = document.querySelector(".hidden-info");
 
 // Event Listeners
@@ -19,7 +24,6 @@ form.addEventListener("submit", (e) => {
 randomBtn.addEventListener("click", () => {
 	searchRandom(searchBar.value);
 });
-
 closeBtn.addEventListener("click", () => {
 	searchBar.value = "";
 });
@@ -98,7 +102,7 @@ function filterDarkMode() {
 		circle.style.color = "grey";
 		circle.style.left = "unset";
 		circle.style.right = "1px";
-		//
+		// apply styles
 		document.body.style.backgroundColor = "white";
 		document.body.style.color = "black";
 		searchBtn.style.backgroundColor = "#f5f5f5";
@@ -109,7 +113,7 @@ function filterDarkMode() {
 		circle.style.color = "black";
 		circle.style.left = "1px";
 		circle.style.right = "unset";
-		//
+		// apply styles
 		document.body.style.backgroundColor = "#202124";
 		document.body.style.color = "white";
 		searchBar.style.color = "white";
