@@ -7,6 +7,10 @@ const topSection = document.querySelector(".search-wrapper");
 const div = document.querySelector(".searchEntry");
 const logo = document.querySelector(".logo");
 const closeBtn = document.querySelector(".closeBtn");
+const darkMode = document.querySelector("#darkMode");
+const searchArea = document.querySelector(".searchArea");
+const helpBtn = document.querySelector(".fa-circle-info");
+const popup = document.querySelector(".hidden-info");
 
 // Event Listeners
 form.addEventListener("submit", (e) => {
@@ -18,6 +22,16 @@ randomBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
 	searchBar.value = "";
+});
+
+darkMode.addEventListener("click", () => {
+	filterDarkMode();
+});
+helpBtn.addEventListener("mouseover", () => {
+	popup.style.display = "block";
+});
+helpBtn.addEventListener("mouseleave", () => {
+	popup.style.display = "none";
 });
 
 async function search(e) {
@@ -73,5 +87,35 @@ async function searchRandom(query) {
 		location.href = data.link;
 	} catch (error) {
 		window.alert("No results for querys, please try again.");
+	}
+}
+
+function filterDarkMode() {
+	const circle = document.querySelector(".fa-circle");
+	if (circle.style.left === "1px") {
+		console.log("hello");
+		circle.style.color = "grey";
+		circle.style.left = "unset";
+		circle.style.right = "1px";
+		//
+		document.body.style.backgroundColor = "white";
+		document.body.style.color = "black";
+		searchBtn.style.backgroundColor = "#f5f5f5";
+		randomBtn.style.backgroundColor = "#f5f5f5";
+		searchBtn.style.color = "black";
+		randomBtn.style.color = "black";
+	} else {
+		circle.style.color = "black";
+		circle.style.left = "1px";
+		circle.style.right = "unset";
+		//
+		document.body.style.backgroundColor = "#202124";
+		document.body.style.color = "white";
+		searchBar.style.color = "white";
+		searchArea.style.border = "1px solid #525252";
+		searchBtn.style.backgroundColor = "#3b3b3b";
+		randomBtn.style.backgroundColor = "#3b3b3b";
+		searchBtn.style.color = "white";
+		randomBtn.style.color = "white";
 	}
 }
