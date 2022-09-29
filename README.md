@@ -53,3 +53,4 @@ Search for the different types of pets and get back results which match your sea
 
 - Frontend deployed on Firebase
 - Backend deployed on Heroku
+- Use Google API

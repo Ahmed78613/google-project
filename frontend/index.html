@@ -22,6 +22,15 @@
 		<title>PetSearch</title>
 	</head>
 	<body>
+		<header>
+			<div id="darkMode"><i class="fa-solid fa-circle"></i></div>
+			<i class="fa-solid fa-circle-info"></i>
+			<p class="hidden-info">
+				<strong>Endpoints:</strong> <br />pets <br />cats <br />dogs <br />fish
+				<br />birds<br />
+				hamsters
+			</p>
+		</header>
 		<main>
 			<section class="searchEntry">
 				<div class="search-wrapper">
@@ -40,23 +49,27 @@
 						</div>
 					</a>
 					<form id="searchBar" class="searchBar" role="search">
-						<input
-							id="search"
-							type="text"
-							autocomplete="off"
-							role="searchbox"
-						/>
+						<div class="searchArea">
+							<i class="fa-solid fa-magnifying-glass"></i>
+
+							<input
+								id="search"
+								type="text"
+								autocomplete="off"
+								role="searchbox"
+							/>
+							<i class="fa-solid fa-x closeBtn"></i>
+						</div>
+
 						<div class="buttonContainer">
 							<button
 								id="searchButton"
 								class="button searchButton"
 								aria-label="Submit button"
 							>
-								<i class="fa-brands fa-searchengin"></i>
+								Search
 							</button>
-							<button id="randomButton">
-								<i class="fa-solid fa-shuffle"></i>
-							</button>
+							<button id="randomButton">I'm Feeling Lucky</button>
 						</div>
 					</form>
 				</div>
